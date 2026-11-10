@@ -1,0 +1,147 @@
+{
+  "run_id": "20204a9a-b19d-4981-b96d-04050fcc9102",
+  "status": "COMPLETED",
+  "goal": "Navigate to https://www.uaeu.ac.ae/en/calendar/ to complete the goal: Look at this page and report what it is: an academic calendar (semester start/end, registration, add/drop, exam dates), an events calendar (talks, ceremonies), or something else. If it has a view selector (month/list/term) or a year/term dropdown, use it to show the fullest list. Return: page_kind, the title shown, up to 8 dated items as {date, title} exactly as shown, and whether term dates such as registration or add/drop deadlines appear anywhere on it. Do not navigate to other pages.",
+  "created_at": "2026-11-03T12:08:54Z",
+  "started_at": "2026-11-03T12:08:57Z",
+  "finished_at": "2026-11-03T12:09:46Z",
+  "num_of_steps": 4,
+  "result": {
+    "items": [
+      {
+        "date": "17 Aug",
+        "title": "Add and drop begins"
+      },
+      {
+        "date": "17 Aug",
+        "title": "Reporting of current and new Faculty, Instructors and Academic Administrators"
+      },
+      {
+        "date": "17 Aug",
+        "title": "New Student Orientation, Advising and Registration"
+      },
+      {
+        "date": "24 Aug",
+        "title": "Classes Begin"
+      },
+      {
+        "date": "28 Aug",
+        "title": "Last day to add courses"
+      },
+      {
+        "date": "07 Sep",
+        "title": "Academic Advising period begins"
+      },
+      {
+        "date": "18 Sep",
+        "title": "Last day to withdraw and drop without failure"
+      },
+      {
+        "date": "05 Oct",
+        "title": "Midterm Exams"
+      }
+    ],
+    "notes": "This is an academic calendar for UAE University with year selector tabs (2024-2025, 2025-2026, 2026-2027). It does not have a month/list/term view selector. Term dates such as registration and add/drop deadlines are embedded within the semester schedules, not listed as standalone 'term dates.'",
+    "title": "UAEU Calendar",
+    "page_kind": "academic calendar",
+    "has_term_dates": false
+  },
+  "output_schema": {
+    "type": "object",
+    "required": [
+      "page_kind",
+      "items",
+      "has_term_dates"
+    ],
+    "properties": {
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "date",
+            "title"
+          ],
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "notes": {
+        "type": "string",
+        "nullable": true
+      },
+      "title": {
+        "type": "string",
+        "nullable": true
+      },
+      "page_kind": {
+        "type": "string"
+      },
+      "has_term_dates": {
+        "type": "boolean"
+      }
+    }
+  },
+  "profile_attached": false,
+  "profile_id": null,
+  "error": null,
+  "streaming_url": null,
+  "browser_config": {
+    "proxy_enabled": false,
+    "proxy_country_code": null
+  },
+  "video_url": null,
+  "steps": [
+    {
+      "id": "660099a5-d43b-4350-96ba-7d164073ddb0",
+      "timestamp": "2026-11-03T12:08:58Z",
+      "status": "RUNNING",
+      "action": "Visit UAE University calendar page to analyze its content",
+      "screenshot": null,
+      "html": null,
+      "duration": "10.2s"
+    },
+    {
+      "id": "ebd6ee4d-ca8f-4d74-8adc-642d191b1093",
+      "timestamp": "2026-11-03T12:09:11Z",
+      "status": "RUNNING",
+      "action": "Extract page content details and all dated items",
+      "screenshot": null,
+      "html": null,
+      "duration": "4.8s"
+    },
+    {
+      "id": "18c31abb-3f8c-45ea-af71-57c352bf5f7e",
+      "timestamp": "2026-11-03T12:09:24Z",
+      "status": "RUNNING",
+      "action": "Check another year tab for fuller list of items",
+      "screenshot": null,
+      "html": null,
+      "duration": "1.3s"
+    },
+    {
+      "id": "3a7f02c8-c636-490e-9458-f5b84212f022",
+      "timestamp": "2026-11-03T12:09:44Z",
+      "status": "RUNNING",
+      "action": "Return UAEU calendar page analysis",
+      "screenshot": null,
+      "html": null,
+      "duration": "0.0s"
+    },
+    {
+      "id": "a4c1a8d4-11b8-4d86-9093-6098529b9b6d",
+      "timestamp": "2026-11-03T12:09:46Z",
+      "status": "COMPLETED",
+      "action": "Task completed",
+      "screenshot": null,
+      "html": null,
+      "duration": null
+    }
+  ]
+}

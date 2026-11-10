@@ -1,0 +1,30 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "falaj",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-01",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "falaj",
+      "database_id": "bb53fd1b-3fd7-4cf6-b95a-9312e80a7570",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "triggers": {
+    // Nightly canaries at 22:00 UTC (02:00 Gulf time); the weekly calendar
+    // read on Sunday one hour earlier; every quarter hour, the health pass a
+    // Monitor change is waiting for (it does nothing when none is).
+    "crons": ["0 22 * * *", "0 21 * * SUN", "*/15 * * * *"]
+  },
+  "vars": {
+    "PUBLIC_BASE_URL": "https://falaj.falaj.workers.dev"
+  },
+  // The page's stylesheet, scripts and photographs. Everything else is answered by the Worker.
+  "assets": {
+    "directory": "./public"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

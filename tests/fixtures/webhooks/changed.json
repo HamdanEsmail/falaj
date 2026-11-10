@@ -1,0 +1,29 @@
+{
+  "fetch_monitor_id": "00000000-0000-4000-8000-catalogue0001",
+  "id": "00000000-0000-4000-8000-payload00001",
+  "is_baseline": false,
+  "outcome": "changed",
+  "diff": "--- previous\n+++ current\n@@ -1,3 +1,3 @@\n # Courses\n-Old list\n+New list\n",
+  "diff_truncated": false,
+  "judgment": {
+    "purpose": "The page structure changed or the list of courses or programmes changed.",
+    "is_relevant": true,
+    "summary": "A course list entry was added.",
+    "error": null
+  },
+  "results": [
+    {
+      "url": "https://www.uaeu.ac.ae/en/catalog/courses/",
+      "final_url": "https://www.uaeu.ac.ae/en/catalog/courses/",
+      "title": "Courses",
+      "description": null,
+      "language": "en",
+      "text": "# Courses\n",
+      "author": null,
+      "published_date": null,
+      "latency_ms": 100,
+      "format": "markdown"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,50 @@
+{
+  "_note": "Names and email local parts are placeholders; URL shapes and college path segments are real (from a TinySearch spike, 2026-11-03).",
+  "query": "uaeu faculty",
+  "results": [
+    {
+      "position": 1,
+      "site_name": "uaeu.ac.ae",
+      "snippet": "",
+      "title": "UAEU Faculty Directory",
+      "url": "https://www.uaeu.ac.ae/en/catalog/uaeu-faculty-directory.shtml"
+    },
+    {
+      "position": 2,
+      "site_name": "uaeu.ac.ae",
+      "snippet": "",
+      "title": "Dr. Amal Example",
+      "url": "https://www.uaeu.ac.ae/en/cmhs/profile.shtml?email=a.example@uaeu.ac.ae"
+    },
+    {
+      "position": 3,
+      "site_name": "uaeu.ac.ae",
+      "snippet": "",
+      "title": "Basel Example",
+      "url": "https://www.uaeu.ac.ae/en/eng/profile.shtml?email=b.example@uaeu.ac.ae"
+    },
+    {
+      "position": 4,
+      "site_name": "uaeu.ac.ae",
+      "snippet": "",
+      "title": "Chen Example",
+      "url": "https://www.uaeu.ac.ae/en/cmhs/profile.shtml?email=c.example@uaeu.ac.ae"
+    },
+    {
+      "position": 5,
+      "site_name": "uaeu.ac.ae",
+      "snippet": "",
+      "title": "Dr. Dina Example",
+      "url": "https://www.uaeu.ac.ae/en/chss/profile.shtml?email=d.example@uaeu.ac.ae"
+    },
+    {
+      "position": 6,
+      "site_name": "uaeu.ac.ae",
+      "snippet": "",
+      "title": "Faculty Profile - Eli Example",
+      "url": "https://www.uaeu.ac.ae/en/cmhs/profile.shtml?email=eexample@uaeu.ac.ae"
+    }
+  ],
+  "total_results": 6,
+  "page": 0
+}
