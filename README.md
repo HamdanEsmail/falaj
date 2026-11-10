@@ -1,5 +1,7 @@
 # Falaj
 
+![The Falaj home: the name in English and Arabic beside a photograph of a falaj in Al Ain, ten round wells for the ten tools, and the address an assistant connects to](docs/hero.jpg)
+
 Falaj is a remote MCP server that turns United Arab Emirates University's public website into ten typed, read-only tools. An assistant can search the course catalogue, read a course or programme page, list events and withdrawal deadlines, find faculty profile pages, and read a cached faculty profile or academic calendar. Pages are read through TinyFish (Fetch, Search, Agent and two Page monitors). The same Worker serves a page where a visitor can try a tool, and a small JSON API.
 
 Live: **https://falaj.falaj.workers.dev** is the page, and `https://falaj.falaj.workers.dev/mcp` is the address an assistant is given. To run it yourself, see "Run locally" below.

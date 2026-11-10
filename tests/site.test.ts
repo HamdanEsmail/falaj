@@ -72,6 +72,8 @@ describe("the page", () => {
     expect(res.headers.get("content-type")).toContain("text/html");
     expect(html).toContain('<meta name="author" content="Hamdan Esmail"/>');
     expect(html).toContain('Built by <a href="https://github.com/HamdanEsmail" rel="author">Hamdan Esmail</a>');
+    // The code is public, and the footer links it.
+    expect(html).toContain('<a href="https://github.com/HamdanEsmail/falaj">GitHub</a>');
     const csp = res.headers.get("content-security-policy") ?? "";
     expect(csp).toContain("default-src 'self'");
     expect(csp).toContain("script-src 'self'");

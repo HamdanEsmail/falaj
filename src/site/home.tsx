@@ -552,7 +552,8 @@ function Foot(props: { data: PageData }) {
             Falaj reads only public pages of uaeu.ac.ae, a few at a time, and never signs in anywhere. It is a student project and is not run by the university.
           </p>
           <p>
-            Built by <a href="https://github.com/HamdanEsmail" rel="author">Hamdan Esmail</a>, with TinyFish doing the reading.
+            Built by <a href="https://github.com/HamdanEsmail" rel="author">Hamdan Esmail</a>, with TinyFish doing the reading. The code is on{" "}
+            <a href="https://github.com/HamdanEsmail/falaj">GitHub</a>.
           </p>
         </div>
       </div>
